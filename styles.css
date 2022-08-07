@@ -70,11 +70,17 @@ p {
   justify-content: space-between;
   list-style: none;
   margin-bottom: 30px;
+  border: none;
 }
 
-.rating {
+.rating-container input {
+  display: none;
+}
+
+label {
   width: 50px;
   margin: 2px;
+  padding-top: 15px;
   height: 50px;
   cursor: pointer;
   color: white;
@@ -82,9 +88,10 @@ p {
   background-color: hsl(213, 19%, 18%);
   border-radius: 50%;
   border: none;
+  text-align: center;
 }
 
-.rating:hover {
+label:hover {
   background-color: hsl(25, 97%, 53%);
   color: white;
 }
@@ -98,6 +105,7 @@ p {
   cursor: pointer;
   border: none;
   color: white;
+  width: 100%;
   padding: 1em 0;
   border-radius: 30px;
 }
@@ -105,4 +113,12 @@ p {
 #submit:hover {
   background-color: white;
   color: hsl(25, 97%, 53%);
+}
+
+.attribution { 
+  font-size: 11px; text-align: center; 
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
 }

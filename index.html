@@ -2,18 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="styles.css">
   
   <title>Frontend Mentor | Interactive rating component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
   <div class="container">
@@ -24,14 +18,21 @@
         <p>  Please let us know how we did with your support request. All feedback is appreciated 
           to help us improve our offering!
         </p>
-        <div class="rating-container">
-          <button class="rating" id="1">1</button>
-          <button class="rating" id="2">2</button>
-          <button class="rating" id="3">3</button>
-          <button class="rating" id="4">4</button>
-          <button class="rating" id="5">5</button>
-        </div>
-        <button id="submit">S U B M I T</button>
+        <form>
+            <fieldset class="rating-container">
+              <input type="radio" name="rating" id="1" value="1"></input>
+              <label for="1" class="rating">1</label>
+              <input type="radio" name="rating" id="2" value="2"></input>
+              <label for="2" class="rating">2</label>
+              <input type="radio" name="rating" id="3" value="3"></input>
+              <label for="3" class="rating">3</label>
+              <input type="radio" name="rating" id="4" value="4"></input>
+              <label for="4" class="rating">4</label>
+              <input type="radio" name="rating" id="5" value="5"></input>
+              <label for="5" class="rating">5</label>
+            </fieldset>
+          <button id="submit">S U B M I T</button>
+        </form>
       </div>
     </div>
 

@@ -19,7 +19,8 @@ function removeActive() {
 }
 
 
-submit.addEventListener("click", () => {
+submit.addEventListener("click", event => {
+  event.preventDefault()
   if (!chosen.innerHTML) {
     alert("Please select a rating!")
     return
